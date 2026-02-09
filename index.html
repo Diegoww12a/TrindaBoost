@@ -46,6 +46,7 @@
 
           
         </li>
+        
       </ul>
     </nav>
 
@@ -61,7 +62,12 @@
     
     
 
-<button class="flex lg:hidden" id="bt">X</button>
+<button id="bt" class="flex lg:hidden  items-center justify-center w-12 h-12  text rounded-lg   shadow-md  hover:scale-105 transition transform duration-300">
+  <!-- Ícone ou texto -->
+  <svg  xmlns="http://www.w3.org/2000/svg" class="h-6  w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+  </svg>
+</button>
 
 
 
@@ -70,20 +76,20 @@
 
   </div>
   
-  <div id="side" class=" hidden    flex-col w-full  relative">
-      <nav class="absolute   mx-auto bg-black/90 backdrop:blur-lg w-full top-0">
-        <ul class="lg:flex flex justify-center items-center py-20  gap-6">
-        <ul class="flex flex-col justify-center items-center gap-6 py-20">
-  <li><a class="text-gray-300 font-semibold hover:text-white" href="#inicio">Início</a></li>
-  <li><a class="text-gray-300 font-semibold hover:text-white" href="#precos">Preços</a></li>
-  <li><a class="text-gray-300 font-semibold hover:text-white" href="#hero">Otimização</a></li>
-  <li><a class="text-gray-300 font-semibold hover:text-white" href="termos.html">Termos</a></li>
-</ul>
+  <div id="side" class="border transform  z-0 transition-transform duration-300 lg:hidden hidden  border-yellow-300  flex relative flex-col items-center">
 
+    <nav>
+      <ul class="flex gap-6 py-20">
+         <li><a class="text-gray-300 border py-2 px-2 rounded-md border-yellow-300/50 font-semibold hover:text-white" href="#inicio">Início</a></li>
+         <li><a class="text-gray-300 border py-2 px-2 rounded-md border-yellow-300/50 font-semibold hover:text-white" href="#precos">Preços</a></li>
+         <li><a class="text-gray-300 border py-2 px-2 rounded-md border-yellow-300/50 font-semibold hover:text-white" href="#hero">Otimização</a></li>
+         <li><a class="text-gray-300 border py-2 px-2 rounded-md border-yellow-300/50 font-semibold hover:text-white" href="termos.html">Termos</a></li>
       </ul>
-        
-      </nav>
-    </div>
+    </nav>
+    
+
+
+  </div>
 
 
    
@@ -345,7 +351,7 @@
   </div>
   
   <h3 class="text-xl font-semibold text-white">Otimização Completa</h3>
-  <p>R$100,00</p>
+  <p class="text-lg">R$100,00</p>
   <p class="text-sm text-[#b8bbc0] leading-relaxed tracking-tight">
     Otimização focada na performance geral do PC, trabalhando em configurações de BIOS e Windows.
   </p>
@@ -370,7 +376,7 @@
   </div>
   
   <h3 class="text-xl font-semibold text-white">Windows Booster</h3>
-  <p>R$ 39,99 e 49,99</p>
+  <p  class="text-lg">R$ 39,99 e 49,99</p>
   <p class="text-sm leading-relaxed text-[#b8bbc0] tracking-tight">
     Windows leve e otimizado, sem aplicativos desnecessários. Ideal para gamers e criadores que precisam de um sistema rápido e seguro.
   </p>
@@ -394,7 +400,7 @@
   </div>
   
   <h3 class="text-xl font-semibold text-white">Furar Fila</h3>
-  <p>R$40,00</p>
+  <p  class="text-lg">R$40,00</p>
   <p class="text-sm leading-relaxed text-[#b8bbc0] tracking-tight">
     Está com pressa? Esse pacote garante prioridade na fila de otimização.
   </p>
@@ -488,14 +494,18 @@
 
   <div class="w-full flex-col  flex relative max-w-7xl mx-auto">
 
-    <span class="text-center space-y-4">
-      <h2 class="text-4xl text-yellow-300">Como funciona a otimização da Trinda Boost</h2>
+   <div class="max-w-4xl mx-auto text-center mt-16 px-4 space-y-5">
+  <h2 class="text-4xl md:text-5xl text-yellow-300 ">
+    Como funciona a otimização da <span class="bg-gradient-to-r from-yellow-300 to-yellow-400 bg-clip-text text-transparent"> Trinda Boost</span>
+  </h2>
+  <p class="text-md md:text-lg text-gray-400">
+    Nosso serviço de otimização é feito 100% via acesso remoto e focado nos pilares essenciais para garantir a máxima performance do seu sistema.
+  </p>
+</div>
 
-    <p class="text-md text-[#b8bbc0]">Nosso serviço de otimização é feito 100% via acesso remoto e focado nos pilares essenciais para garantir a máxima performance do seu sistema.</p>
-    </span>
 
 
-    <div class="grid mt-14 h-auto grid-cols-1 gap-6 lg:grid-cols-3">
+    <div class="grid mt-16 h-auto grid-cols-1 gap-6 lg:grid-cols-3">
 
   <div class="flex flex-col items-center space-y-3 rounded-lg border border-yellow-300/30 bg-black/60 p-6 transition-all duration-300 cursor-pointer hover:shadow-[0_0_15px_rgba(251,206,44,0.26)]">
     <h1 class="text-xl font-semibold text-yellow-300">Sistema mais ágil</h1>
@@ -522,7 +532,7 @@
 
 
    <div class="bg-black/50 text-sm leading-relaxed tracking-tight border border-yellow-300/30 rounded-lg p-6 space-y-4 text-gray-300 mt-14">
-  <p><strong>1: Garantia:</strong> Se tiver dúvidas sobre a eficácia, confira os nossos ✅ feedbacks de clientes satisfeitos.</p>
+  <p><strong>1: Garantia:</strong> Se tiver dúvidas sobre a eficácia, confira os nossos  feedbacks de clientes satisfeitos.</p>
   <p><strong>2:</strong> Recomendamos que o sistema esteja formatado (não obrigatório).</p>
   <p><strong>3: Plataformas:</strong> 🔟 Win10-Booster | 💎 Win11-Booster | 💯 Win11-Competitive</p>
   <p><strong>4: Conexão:</strong> via AnyDesk ou TeamViewer.</p>
@@ -537,30 +547,34 @@
 </section>
 
 <section class="mt-20 pb-32 text-center text-white">
-  <div class="max-w-6xl mx-auto flex flex-col items-center">
-    <h1 class="text-4xl md:text-5xl text-yellow-300 font-bold text-center mb-12">
-      Para quem é a Trinda Boost
-    </h1>
+  <div class="max-w-6xl mx-auto flex flex-col items-center mt-16 px-4">
+  <h1 class="text-4xl md:text-5xl text-yellow-300 font-bold text-center mb-12">
+    Para quem é a Trinda Boost
+  </h1>
 
-    <div class="grid md:grid-cols-4 gap-8 w-full px-6">
-      <div class="bg-black/60 border border-yellow-300/30 rounded-xl p-6 flex flex-col items-center gap-3 shadow-lg hover:shadow-yellow-300/50 transition cursor-pointer">
-        <p class="text-xl font-semibold">Gamers</p>
-        <p class="text-gray-300 text-center text-sm">Melhor desempenho e FPS mais alto para jogos.</p>
-      </div>
-      <div class="bg-black/60 border border-yellow-300/30 rounded-xl p-6 flex flex-col items-center gap-3 shadow-lg hover:shadow-yellow-300/50 transition cursor-pointer">
-        <p class="text-xl font-semibold">Jogadores de FiveM</p>
-        <p class="text-gray-300 text-center text-sm">Otimização focada para RP e Competitivo </p>
-      </div>
-      <div class="bg-black/60 border border-yellow-300/30 rounded-xl p-6 flex flex-col items-center gap-3 shadow-lg hover:shadow-yellow-300/50 transition cursor-pointer">
-        <p class="text-xl font-semibold">Usuários com PC lento</p>
-        <p class="text-gray-300 text-center text-sm">PC mais rápido, estável e responsivo.</p>
-      </div>
-      <div class="bg-black/60 border border-yellow-300/30 rounded-xl p-6 flex flex-col items-center gap-3 shadow-lg hover:shadow-yellow-300/50 transition cursor-pointer">
-        <p class="text-xl font-semibold">Criadores de conteúdo</p>
-        <p class="text-gray-300 text-center text-sm">Sistema otimizado para streaming e edição.</p>
-      </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 w-full">
+    <div class="bg-black/60 border border-yellow-300/30 rounded-xl p-6 flex flex-col items-center gap-3 shadow-lg hover:shadow-[0_0_20px_rgba(252,211,77,0.5)] transition-shadow duration-300 cursor-pointer">
+      <p class="text-xl font-semibold text-yellow-300">Gamers</p>
+      <p class="text-gray-300 text-center text-sm">Melhor desempenho e FPS mais alto para jogos.</p>
+    </div>
+
+    <div class="bg-black/60 border border-yellow-300/30 rounded-xl p-6 flex flex-col items-center gap-3 shadow-lg hover:shadow-[0_0_20px_rgba(252,211,77,0.5)] transition-shadow duration-300 cursor-pointer">
+      <p class="text-xl font-semibold text-yellow-300">Jogadores de FiveM</p>
+      <p class="text-gray-300 text-center text-sm">Otimização focada para RP e competitivo.</p>
+    </div>
+
+    <div class="bg-black/60 border border-yellow-300/30 rounded-xl p-6 flex flex-col items-center gap-3 shadow-lg hover:shadow-[0_0_20px_rgba(252,211,77,0.5)] transition-shadow duration-300 cursor-pointer">
+      <p class="text-xl font-semibold text-yellow-300">Usuários com PC lento</p>
+      <p class="text-gray-300 text-center text-sm">PC mais rápido, estável e responsivo.</p>
+    </div>
+
+    <div class="bg-black/60 border border-yellow-300/30 rounded-xl p-6 flex flex-col items-center gap-3 shadow-lg hover:shadow-[0_0_20px_rgba(252,211,77,0.5)] transition-shadow duration-300 cursor-pointer">
+      <p class="text-xl font-semibold text-yellow-300">Criadores de conteúdo</p>
+      <p class="text-gray-300 text-center text-sm">Sistema otimizado para streaming e edição.</p>
     </div>
   </div>
+</div>
+
 </section>
 
 
@@ -576,18 +590,18 @@
   
 
 </div>
-  <div class="max-w-6xl mx-auto  flex flex-col items-center">
-
-    <div class="border w-full pb-  rounded-lg bg-black/40 border-yellow-300/40 p-6 shadow-lg">
-      <p class="leading-relaxed text-yellow-300 pb-5 text-3xl font-semibold">
-        Pronto para melhorar seu desempenho?
-      </p>
-      <a  target="_blank" href="https://discord.com/channels/1343285235558780980/1434651449836568638" class="mt-20 flex w-72  mx-auto  justify-center border font-medium hover:bg-yellow-300/10 transition duration-300 py-3 px-5  rounded-lg border-yellow-300 bg-yellow-300/5">
-       Solicitar orçamento agora
-         </a>
-    </div>
-
+  <div class="max-w-6xl mx-auto flex flex-col items-center mt-10">
+  <div class="w-full bg-black/40 border border-yellow-300/40 rounded-lg p-8 shadow-lg text-center">
+    <p class="text-3xl font-semibold text-yellow-300 mb-6">
+      Pronto para melhorar seu desempenho?
+    </p>
+    <a href="https://discord.com/channels/1343285235558780980/1434651449836568638" target="_blank"
+       class="inline-block w-72 py-3 px-5 font-medium text-black bg-yellow-300 rounded-lg border border-yellow-300 hover:bg-yellow-400 hover:text-black transition duration-300">
+      Solicitar orçamento agora
+    </a>
   </div>
+</div>
+
 </section>
 
 

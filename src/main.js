@@ -17,11 +17,13 @@ btnO.addEventListener("click", () => {
 })
 
 
-const bt = document.getElementById("bt")
-const side = document.getElementById("side")
+
+
+const bt = document.getElementById("bt"); // seu botão
+const side = document.getElementById("side"); // sua sidebar
 
 bt.addEventListener("click", () => {
-    side.classList.toggle("hidden")
-    bt.classList.toggle("rotate-45")
-    
-})
+    side.classList.toggle("hidden");         // mostra/oculta sidebar
+    bt.classList.toggle("rotate-180");       // rotaciona botão
+    side.classList.toggle("");  // animação de entrada
+});
