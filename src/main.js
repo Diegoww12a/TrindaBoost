@@ -5,14 +5,14 @@ import './style.css'
 const btnOtimizar = document.getElementById("btnOtimizar");
 
 btnOtimizar.addEventListener("click", () => {
-    const section = document.getElementById("servicos");
+    const section = document.getElementById("precos");
     section.scrollIntoView({ behavior: "smooth"})
 })
 
 const btnO  = document.getElementById("btnO");
 
 btnO.addEventListener("click", () => {
-    const section = document.getElementById("como")
+    const section = document.getElementById("hero")
     section.scrollIntoView({ behavior: "smooth" })
 })
 
