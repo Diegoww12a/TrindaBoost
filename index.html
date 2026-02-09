@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="src/style.css">
     <title>Trinda Boost</title>
   </head>
-  <body class="bg-[#0b0b0b] select-none min-h-screen font-sans text-white">
+  <body id="inicio" class="bg-[#0b0b0b] select-none min-h-screen font-sans text-white">
 
    
 
@@ -18,15 +18,16 @@
     
     <img class="w-12 select-none" src="trinda.png" alt="Logo Trinda Boost" />
 
-    <nav>
-      <ul class="flex items-center gap-6">
+    <nav id="">
+      <ul class="lg:flex items-center hidden  gap-6">
         <li>
           <a class="text-sm font-semibold text-gray-300 transition hover:text-white" href="#">
             Início
           </a>
+          
         </li>
         <li>
-          <a id="btnOtimizar" class="text-sm font-semibold text-gray-300 transition hover:text-white" href="#">
+          <a id="btnOtimizar" class="text-sm font-semibold text-gray-300 transition hover:text-white" href="#precos">
             Preços
           </a>
         </li>
@@ -34,12 +35,63 @@
           <a id="btnO" class="text-sm font-semibold text-gray-300 transition hover:text-white" href="#hero">
             Otimização
           </a>
+
+          
+        </li>
+
+        <li>
+          <a target="_blank" id="btnO" class="text-sm font-semibold text-gray-300 transition hover:text-white" href="termos.html">
+            Termos
+          </a>
+
+          
         </li>
       </ul>
     </nav>
 
+    
+
+   
+    
+    
+
+
+
+    
+    
+    
+
+<button class="flex lg:hidden" id="bt">X</button>
+
+
+
+   
+     
+
   </div>
+  
+  <div id="side" class=" hidden    flex-col w-full  relative">
+      <nav class="absolute   mx-auto bg-black/90 backdrop:blur-lg w-full top-0">
+        <ul class="lg:flex flex justify-center items-center py-20  gap-6">
+        <ul class="flex flex-col justify-center items-center gap-6 py-20">
+  <li><a class="text-gray-300 font-semibold hover:text-white" href="#inicio">Início</a></li>
+  <li><a class="text-gray-300 font-semibold hover:text-white" href="#precos">Preços</a></li>
+  <li><a class="text-gray-300 font-semibold hover:text-white" href="#hero">Otimização</a></li>
+  <li><a class="text-gray-300 font-semibold hover:text-white" href="termos.html">Termos</a></li>
+</ul>
+
+      </ul>
+        
+      </nav>
+    </div>
+
+
+   
+    
+  
 </header>
+
+
 
 
 
@@ -97,7 +149,7 @@
     
     <div class="flex  items- flex-col lg:flex-row  w-full justify-between">
       
-      <div class="flex w-full mt-20 max-w-3xl flex-col text-center lg:text-left">
+      <div class="flex w-full mt-16 lg:mt-24 max-w-3xl flex-col text-center lg:text-left">
         
         <h1 class="text-3xl  leading- font-semibold text-white lg:text-5xl">
           Trinda Boost  <span class="text-[#ffef14]"> Otimização que entrega</span> resultado
@@ -264,7 +316,7 @@
 
 
 
-<section id="servicos" class="mt-32 relative  pb-20">
+<section id="precos" class="mt-32 relative  pb-20">
 
 
   <div class="absolute inset-0 ff   pointer-events-none">
@@ -375,18 +427,18 @@
 
 <section class="mt-20 pb-32">
 
-  <div class="w-full flex-col  flex relative max-w-7xl mx-auto">
+  <div class="w-full flex-col   flex relative max-w-7xl mx-auto">
 
    <span class="flex flex-col mx-auto space-y-3 text-center">
     <h1 class="text-yellow-300 text-4xl">O que dizem nossos clientes</h1>
     <p class="text-md text-[#b8bbc0]">Experiências reais de quem já otimizou com a Trinda Boost.</p>
    </span>
 
-   <div class="grid relative  gap-5 mt-20 grid-cols-1 lg:grid-cols-3 items-center">
+   <div class="grid relative  gap-5 mt-20 grid-cols-1 lg:grid-cols-3 items-">
 
-    <div class="bg-black/60 border border-yellow-300 rounded-lg p-8 shadow-md  mx-auto max-w-xl  ">
+    <div class="bg-black/60 shadow-[0px_0px_20px_0px_rgba(251,_206,_44,_0.26)] flex flex-col border border-yellow-300 rounded-lg p-8   mx-auto max-w-xl  ">
 
-      <p class="text-lg italic text-yellow-300 mb-4">
+      <p class="text-md italic  text-yellow-300 mb-4">
         “atendimento bom pra krl, serviço clean demais, pc saiu de 130 fps pra 350 fps!!”
       </p>
       <span class="block text-sm text-gray-300 font-semibold">— Black</span>
@@ -394,18 +446,18 @@
     </div>
     
 
-     <div class="bg-black/60 border  border-yellow-300 rounded-lg p-8 shadow-md  mx-auto max-w-xl  ">
+     <div class="bg-black/60 shadow-[0px_0px_20px_0px_rgba(251,_206,_44,_0.26)] flex flex-col border  border-yellow-300 rounded-lg p-8   mx-auto max-w-xl  ">
 
-      <p class="text-lg italic text-yellow-300 mb-4">
+      <p class="text-md italic text-yellow-300 mb-4">
         “win11 e otm muito boa 400fps+ em cidade 1000players. Alem do atendimento ser muito bom”
       </p>
       <span class="block text-sm text-gray-300 font-semibold">— versatyfpsss</span>
 
     </div>
 
-     <div class="bg-black/60 border py- border-yellow-300 rounded-lg p-8 shadow-md  mx-auto max-w-xl  ">
+     <div class="bg-black/60 flex flex-col border py- border-yellow-300 rounded-lg p-8 shadow-[0px_0px_20px_0px_rgba(251,_206,_44,_0.26)]  mx-auto max-w-xl  ">
 
-      <p class="text-lg italic text-yellow-300 mb-4">
+      <p class="text-md italic text-yellow-300 mb-4">
         “Melhor otimização do momento! fiz novamente e vou continuar fazendo. win 10 competitive mais a otm fica perfeito”
       </p>
       <span class="block text-sm text-gray-300 font-semibold">— pedronvx</span>
@@ -421,7 +473,7 @@
 
 </section>
 
-<section id="como" class="mt-20 relative pb-32">
+<section id="hero" class="mt-20 relative pb-32">
 
   <div class="absolute inset-0 ff  pointer-events-none">
   <div class="tag px-2 py-1.5 bg-yellow/10  text-yellow font-bold text-sm  text-yellow-500  left-[5%] top-[15%] [animation-delay:0s]"><svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-yellow-300"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" /></svg></div>
@@ -443,41 +495,42 @@
     </span>
 
 
-    <div class="grid mt-14 grid-cols-1 gap-4 lg:grid-cols-3 items-center">
+    <div class="grid mt-14 h-auto grid-cols-1 gap-6 lg:grid-cols-3">
 
-      <div class="border p-6 bg-black/60 border-yellow-300/30 hover:shadow-[0px_0px_15px_0px_rgba(251,_206,_44,_0.26)] transition-all duration-300 cursor-pointer  rounded-lg items-center space-y-3 flex flex-col">
-        <h1 class="text-xl font-semibold text-yellow-300">Sistema mais ágil</h1>
-        <p>Otimização da BIOS e do Windows, pausando processos desnecessários que consomem recursos.</p>
-      </div>
+  <div class="flex flex-col items-center space-y-3 rounded-lg border border-yellow-300/30 bg-black/60 p-6 transition-all duration-300 cursor-pointer hover:shadow-[0_0_15px_rgba(251,206,44,0.26)]">
+    <h1 class="text-xl font-semibold text-yellow-300">Sistema mais ágil</h1>
+    <p class="text-sm leading-relaxed tracking-tight text-gray-200">
+      Otimização da BIOS e do Windows, pausando processos desnecessários que consomem recursos.
+    </p>
+  </div>
 
-      <div class="border p-9 bg-black/60 border-yellow-300/30 hover:shadow-[0px_0px_15px_0px_rgba(251,_206,_44,_0.26)] transition-all duration-300 cursor-pointer  rounded-lg items-center space-y-3 flex flex-col">
-        <h1 class="text-xl font-semibold text-yellow-300">Jogabilidade superior</h1>
-        <p>Fps mais alto e estável, sem quedas bruscas de quadros ou travamentos (stutters).</p>
-      </div>
+  <div class="flex flex-col items-center space-y-3 rounded-lg border border-yellow-300/30 bg-black/60 p-6 transition-all duration-300 cursor-pointer hover:shadow-[0_0_15px_rgba(251,206,44,0.26)]">
+    <h1 class="text-xl font-semibold text-yellow-300">Jogabilidade superior</h1>
+    <p class="text-sm leading-relaxed tracking-tight text-gray-200">
+      Fps mais alto e estável, sem quedas bruscas de quadros ou travamentos (stutters).
+    </p>
+  </div>
+
+  <div class="flex flex-col items-center space-y-3 rounded-lg border border-yellow-300/30 bg-black/60 p-6 transition-all duration-300 cursor-pointer hover:shadow-[0_0_15px_rgba(251,206,44,0.26)]">
+    <h1 class="text-xl font-semibold text-yellow-300">Comandos imediatos</h1>
+    <p class="text-sm leading-relaxed tracking-tight text-gray-200">
+      Com a redução significativa do input lag do mouse e teclado.
+    </p>
+  </div>
+
+</div>
 
 
-      <div class="border p-9 bg-black/60 border-yellow-300/30 hover:shadow-[0px_0px_15px_0px_rgba(251,_206,_44,_0.26)] transition-all duration-300 cursor-pointer  rounded-lg items-center space-y-3 flex flex-col">
-        <h1 class="text-xl font-semibold text-yellow-300">Comandos imediatos</h1>
-        <p>Redução significativa do input lag de mouse e teclado.</p>
-      </div>
+   <div class="bg-black/50 text-sm leading-relaxed tracking-tight border border-yellow-300/30 rounded-lg p-6 space-y-4 text-gray-300 mt-14">
+  <p><strong>1: Garantia:</strong> Se tiver dúvidas sobre a eficácia, confira os nossos ✅ feedbacks de clientes satisfeitos.</p>
+  <p><strong>2:</strong> Recomendamos que o sistema esteja formatado (não obrigatório).</p>
+  <p><strong>3: Plataformas:</strong> 🔟 Win10-Booster | 💎 Win11-Booster | 💯 Win11-Competitive</p>
+  <p><strong>4: Conexão:</strong> via AnyDesk ou TeamViewer.</p>
+  <p><strong>5: Tempo de otimização:</strong> 15 a 20 minutos por sistema.</p>
+  <p><strong>6: Pagamento e valores:</strong> 💰 Confira nossos planos e formas de pagamento na seção valores.</p>
+  <p><strong>7: Resultado final:</strong> Seu computador ficará visivelmente mais rápido em qualquer tarefa, com um processo totalmente seguro e transparente.</p>
+</div>
 
-
-
-    </div>
-
-    <div class="bg-black/50 border mt-14 border-yellow-300/30  rounded-lg p-6 space-y-4 text-gray-300">
-      <p> 1: Garantia:
-Se tiver dúvidas sobre a eficácia, confira os nossos ✅ feedbacks de clientes satisfeitos.</p>
-      <p>2: Recomendamos que o sistema esteja formatado (não obrigatório).</p>
-      <p>3: Plataformas: 🔟 Win10-Booster | 💎 Win11-Booster | 💯 Win11-Competitive</p>
-      <p>4: Conexão via AnyDesk ou TeamViewer.</p>
-      <p>5: Tempo de otimização:
-15 a 20 minutos por sistema.</p>
-      <p>6: Pagamento e valores:
-💰 Confira nossos planos e formas de pagamento na seção valores.</p>
-      <p>7: Resultado final:
-Seu computador ficará visivelmente mais rápido em qualquer tarefa, com um processo totalmente seguro e transparente.</p>
-    </div>
 
   </div>
 
@@ -496,7 +549,7 @@ Seu computador ficará visivelmente mais rápido em qualquer tarefa, com um proc
       </div>
       <div class="bg-black/60 border border-yellow-300/30 rounded-xl p-6 flex flex-col items-center gap-3 shadow-lg hover:shadow-yellow-300/50 transition cursor-pointer">
         <p class="text-xl font-semibold">Jogadores de FiveM</p>
-        <p class="text-gray-300 text-center text-sm">Otimização focada para servidores e scripts.</p>
+        <p class="text-gray-300 text-center text-sm">Otimização focada para RP e Competitivo </p>
       </div>
       <div class="bg-black/60 border border-yellow-300/30 rounded-xl p-6 flex flex-col items-center gap-3 shadow-lg hover:shadow-yellow-300/50 transition cursor-pointer">
         <p class="text-xl font-semibold">Usuários com PC lento</p>
@@ -523,15 +576,15 @@ Seu computador ficará visivelmente mais rápido em qualquer tarefa, com um proc
   
 
 </div>
-  <div class="max-w-6xl mx-auto flex flex-col items-center">
+  <div class="max-w-6xl mx-auto  flex flex-col items-center">
 
-    <div class="border w-full pb-11 rounded-lg bg-black/40 border-yellow-300/40 p-6 shadow-lg">
-      <p class="leading-relaxed pb-5 text-2xl font-semibold">
+    <div class="border w-full pb-  rounded-lg bg-black/40 border-yellow-300/40 p-6 shadow-lg">
+      <p class="leading-relaxed text-yellow-300 pb-5 text-3xl font-semibold">
         Pronto para melhorar seu desempenho?
       </p>
-      <a target="_blank" href="https://discord.com/channels/1343285235558780980/1434651449836568638" class="mt-5 border font-medium hover:bg-yellow-300/10 transition duration-300 py-3 px-5  rounded-lg border-yellow-300 bg-yellow-300/5">
-  Solicitar orçamento agora
-</a>
+      <a  target="_blank" href="https://discord.com/channels/1343285235558780980/1434651449836568638" class="mt-20 flex w-72  mx-auto  justify-center border font-medium hover:bg-yellow-300/10 transition duration-300 py-3 px-5  rounded-lg border-yellow-300 bg-yellow-300/5">
+       Solicitar orçamento agora
+         </a>
     </div>
 
   </div>
@@ -552,9 +605,9 @@ Seu computador ficará visivelmente mais rápido em qualquer tarefa, com um proc
 <footer class="border-t px-5 relative  border-yellow-300/30 text-gray-300 ">
 
   
-  <div class="max-w-7xl mx-auto px- flex mt-10 pb-10 flex-col md:flex-row justify-between items-start md:items-center gap-10">
+  <div class="max-w-7xl  mx-auto px- flex mt-10 pb-10 flex-col md:flex-row justify-between items-start md:items-center gap-10">
 
-    <div class="flex  max-w-lg gap-3 flex-col">
+    <div class="flex   max-w-lg gap-3 flex-col">
      <div class="flex gap-2 items-center">
        <img class="w-11 " src="trinda.png" alt="">
       <h1 class="text-xl font-semibold">Trinda Boost</h1>

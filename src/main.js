@@ -17,3 +17,11 @@ btnO.addEventListener("click", () => {
 })
 
 
+const bt = document.getElementById("bt")
+const side = document.getElementById("side")
+
+bt.addEventListener("click", () => {
+    side.classList.toggle("hidden")
+    bt.classList.toggle("rotate-45")
+    
+})
