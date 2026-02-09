@@ -60,3 +60,7 @@ html {
 #side {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
+
+* {
+  /* outline: 1px solid rgba(255, 0, 0, 0.425); */
+}
