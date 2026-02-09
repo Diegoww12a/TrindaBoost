@@ -1,9 +1,11 @@
 import { defineConfig } from 'vite'
 
-export default defineConfig({
-  base: '/', // raiz para Netlify
+export default defineConfig(({ mode }) => ({
+  base: mode === 'github'
+    ? '/TrindaBoost/'
+    : '/',
   server: {
     port: 5173,
     open: true
   }
-})
+}))
